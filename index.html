@@ -1,0 +1,30 @@
+<html> 
+    <head>
+         <title>Digital Native Verification Page</title>
+         <Link rel="stylesheet" href="index.css">
+    </head>
+        <body>
+            <form>
+            <div class="container">
+                <div class="content">
+                    <div class="name-field">
+                        <label for="nameInput">Name:</label>
+                        <input pattern="[A-Za-z ]*" required id="nameInput" type="text" placeholder="Enter Your Name">
+                    </div>
+                    <div class="email-field">
+                        <label for="emailInput">Email:</label>
+                        <input required id="emailInput" type="email" placeholder="Enter Your Email">
+                    </div>
+                    <div class="card-field">
+                        <label for="cardInput">Card:</label>
+                        <input class="" onchange="checkCreditField()" pattern="[0-9]{16}" id="cardInput" type="text" placeholder="Enter a Proxy Credit Card Number">
+                    </div>
+                    <div class="submit-btn">
+                        <button type="submit" id="submitBtn">Submit</button>
+                    </div>
+                </div>    
+            </div> 
+            </form>
+        <script src="index.js"></script>           
+        </body>
+</html>
